@@ -11,7 +11,7 @@ export default function Home() {
     if (!email) return;
 
     try {
-      const res = await fetch('https://script.google.com/macros/s/AKfycbwd1B20iA9s0fVEcXyvPbH2gByhUBKQZspS30xT_QHqCAA1_iRsjnXpptNpnPtH6TNnHQ/exec', {
+      const res = await fetch('YOUR_GOOGLE_SCRIPT_URL', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -24,10 +24,9 @@ export default function Home() {
       } else {
         alert('Error: ' + data.message);
       }
-    } catch {
-  alert('Submission failed. Try again later.');
-}
-
+    } catch (error) {
+      alert('Submission failed. Try again later.');
+    }
   };
 
   return (
@@ -85,8 +84,6 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="px-6 py-20 max-w-6xl mx-auto">
-        
-        <h2 className="text-2xl font-semibold text-center mb-10">Coming</h2>
         <h2 className="text-2xl font-semibold text-center mb-10">Services You Can Book</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
