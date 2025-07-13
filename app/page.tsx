@@ -84,6 +84,8 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="px-6 py-20 max-w-6xl mx-auto">
+        
+        <h2 className="text-2xl font-semibold text-center mb-10">Coming Soon</h2>
         <h2 className="text-2xl font-semibold text-center mb-10">Services You Can Book</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
