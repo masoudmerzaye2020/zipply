@@ -24,10 +24,10 @@ export default function Home() {
       } else {
         alert('Error: ' + data.message);
       }
-    } catch (error) {
-      console.error(error);
-      alert('Submission failed. Try again later.');
-    }
+    } catch {
+  alert('Submission failed. Try again later.');
+}
+
   };
 
   return (
