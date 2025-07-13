@@ -12,7 +12,7 @@ export default function Home() {
 
     try {
       const res = await fetch(
-        'https://script.google.com/macros/s/YOUR-SCRIPT-ID/exec',
+        'https://script.google.com/macros/s/AKfycbwd1B20iA9s0fVEcXyvPbH2gByhUBKQZspS30xT_QHqCAA1_iRsjnXpptNpnPtH6TNnHQ/exec',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
